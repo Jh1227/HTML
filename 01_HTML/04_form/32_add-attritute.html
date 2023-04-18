@@ -1,0 +1,84 @@
+
+<!-- 04_form/32_add-attritute.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성</title>
+</head>
+<body>
+<!--  
+	# autofocus
+	- 페이지를 불러오자 마자 입력 필드안에 마우스 커서를 위치합니다
+	
+	# required
+	- 필수 입력 필드를 체크합니다
+	
+	# autocomplate
+	- 정보를 입력할 때 자동완성 기능을 설정합니다 : on(기본값), off
+-->
+
+	<h3>모임 설정</h3>
+	<br>
+	<form action="#">
+		<table>
+			<tr>
+				<td>날짜</td>
+				<td><input type="date" id="set_date" name="setDate"></td>
+			</tr>
+			<tr>
+				<td>시간</td>
+				<td><input type="time" id="set_time" name="setTime"></td>
+			</tr>
+			<tr>
+				<td>장소</td>
+				<td><input type="text" id="set_place" name="setPlace"></td>
+			</tr>
+		</table>
+		<br>
+		
+		<input type="submit" value="저장">
+	</form>
+	<br>
+	<hr>
+	
+	<h3>온도 조절</h3>
+	<br>
+	<form action="#">
+		<p>지속 시간(0.0 ~ 10.0 시간) : <input type="number" id="time" min="0.0" max="10.0" step="0.5"></p>
+		<br>
+		<p>온도 설정 : 10&deg; <input list="temperature" type="range" name="temp" min="10" max="30""> 30&deg; </p>
+		<datalist id="temperature">
+			<option value="15" label="low">
+			<option value="20" label="medium">
+			<option value="25" label="high">
+		</datalist>
+		<br>
+		
+		<input type="submit" value="설정">
+	</form>
+	<br>
+	<hr>
+	<br>
+	
+	<form action="">
+		<fieldset>
+			<legend> 회원 정보 </legend>
+			<label for="user_name"> 이름 </label>
+			<input type="text" id="user_name" name="userName" placeholder="공백없이 입력하세요" autofocus required autocomplete="on">
+			<br><br>
+			<label for="user_mail"> 이메일</label>0
+			<input type="email" id="user_mail" name="userMail" placeholder="test@test.com">
+			<br><br>
+			<label for="user_tel"> 전화번호 </label>
+			<input type="tel" id="user_tel" name="userTel" placeholder="010-0000-0000">
+			<br><br><br>
+			
+			<input type="submit" value="완료">
+		</fieldset>
+	</form>
+	<br>
+	
+</body>
+</html>

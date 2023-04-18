@@ -1,0 +1,73 @@
+
+<!-- 04_form/31_html5_input.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 input 태그</title>
+</head>
+<body>
+	<h2>HTML5 input</h2>
+	<br>
+	<form action="#">
+		<fieldset>
+			<legend> color </legend>
+			<label for="my_color"> 색상 선택 </label>
+			<input type="color" id="my_color" name="myColor">
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend> date </legend>
+			<label for="my_date"> 날짜 선택(년원일) </label>
+			<input type="date" id="my_date" name="myDate">
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend> month </legend>
+			<label for="my_month"> 월 선택(년월) </label>
+			<input type="month" id="my_month" name="myMonth">
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend> week </legend>
+			<label for="my_week"> 주 선택(년도, 주) </label>
+			<input type="week" id="my_week" name="myWeek">
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend> time </legend>
+			<label for="my_time"> 시간 설정 </label>
+			<input type="time" id="my_time" name="myTime">
+		</fieldset>
+		<br>
+		
+		<fieldset>
+			<legend> range </legend>
+			<label for="point"> 값 선택 </label>
+			<input type="range" id="point" name="point" min="0" max="100" step="10" value="10">
+			<pre>
+			슬라이더를 사용해서 값을 선택합니다
+			min, max : 범위 지정
+			step : 숫자 간격 설정
+			value : 초기값 설정
+			</pre>
+		</fieldset>
+		<br>
+
+		<fieldset>
+			<legend> number </legend>
+			<label for="count"> 수량 선택 </label>
+			<input type="number" id="count" name="count" min="0" max="10" step="2" value="0">
+		</fieldset>
+		<br>
+				
+		<br>
+		<input type="submit" value="확인">
+	</form>
+</body>
+</html>
